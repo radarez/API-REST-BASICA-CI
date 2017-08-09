@@ -48,6 +48,9 @@ application/controllers/Todo_model.php
 ### Rutas en
 application/config/routes.php
 
+### Ruta para obtener los datos de la tabla; si obtienes respuesta tu API funciona :), recuerda poner datos en la tabla.
+http://localhost/Todo/todo
+
 ### .htaccess de en raíz
 
     <IfModule mod_rewrite.c>
