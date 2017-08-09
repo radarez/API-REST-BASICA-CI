@@ -16,7 +16,7 @@ class Todo extends REST_Controller
         if (!is_null($rows)) {
             $this->response(array('response' => $rows), 200);
         } else {
-            return $this->response(array('response' => 'No records found :('), 400);
+            return $this->response(array('response' => 'No records found :('), 200);
         }
     }
 

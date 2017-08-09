@@ -11,7 +11,7 @@ Nota: Se pueden hacer muchas modificaciones para mejorar el código, pero esa se
 * MySQL 5.x.x
 * Vue.js 2.x.x y (vue-resource) para conexión a datos
 * Vue-resource 1.3.4
-* CodeIgniter 3.x.x
+* CodeIgniter 3.1.5
 * jQuery 3.x.x
 * Bootstrap 3.x.x
 * Sweetalert2 6.x.x

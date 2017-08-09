@@ -14,12 +14,7 @@ class Todo_model extends CI_Model
         ->get();
         // echo $this->db->last_query();
         $num_rows = sizeof($query->result());
-
-        if($num_rows > 0){
-            return $query->result();
-        }else{
-            return $query->row();
-        }
+        return $query->result_array();
     }
 
     public function add(string $nombre_usuario, string $nombre_tarea, string $descripcion_tarea)
