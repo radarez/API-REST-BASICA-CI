@@ -2,7 +2,7 @@
 La API es una pequeña lista de tareas y se cumplen las cuatro funciones de un CRUD
 Altas, Bajas, Consultas, Modificaciones
 
-Nota: Se pueden hacer muchas modificaciones para mejorar el código, pero esa será tarea de las personas que decidan utilizarla :) ya que el objetivo que persigo es únicamente académico.
+Nota: Se pueden hacer muchas modificaciones para mejorar el código, pero esa será tarea de las personas que decidan utilizarla :) ya que el objetivo que persigo es únicamente de facilitar el aprendizaje de Vue.js.
 
 ## Tecnologías utilizadas
 * Apache Server
@@ -17,10 +17,7 @@ Nota: Se pueden hacer muchas modificaciones para mejorar el código, pero esa se
 
 
 ## Front-end con Vue.js 2
-Index.html
-
-## Configuración básica Vue.js 2.x.x
-
+/Index.html
 
 ## Configuración Básica de CodeIgniter
 ### config.php
@@ -41,6 +38,15 @@ $autoload['libraries'] = array('form_validation','database', 'session');
 $autoload['helper'] = array('url', 'html', 'form' ,'language', 'date','security');
 $autoload['model'] = array('Todo_model');
 ```
+
+### Controlador
+application/controllers/Todo.php
+
+### Modelo
+application/controllers/Todo_model.php
+
+### Rutas en
+application/config/routes.php
 
 ### .htaccess de en raíz
 
