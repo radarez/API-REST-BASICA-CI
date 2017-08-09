@@ -11,15 +11,15 @@ Index.html
 
 <h2>Configuración Básica de CodeIgniter</h2>
 <h3>Config.php</h3>
-```sql
-    $config['index_page'] = '';
+```php
+$config['index_page'] = '';
 ```
 
 </h3>autoload.php</h3>
 ```php
-    $autoload['libraries'] = array('form_validation','database', 'session');
-    $autoload['helper'] = array('url', 'html', 'form' ,'language', 'date','security');
-    $autoload['model'] = array('Todo_model');
+$autoload['libraries'] = array('form_validation','database', 'session');
+$autoload['helper'] = array('url', 'html', 'form' ,'language', 'date','security');
+$autoload['model'] = array('Todo_model');
 ```
 
 <h3>.htaccess de en raíz</h3>
