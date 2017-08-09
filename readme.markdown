@@ -56,9 +56,8 @@ $autoload['model'] = array('Todo_model');
       PRIMARY KEY (`id`)
     ) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
 ```
-<pre>
-Adrian Miranda A.
-Twiitter: [@heyAparicio](https://twitter.com/heyaparicio?lang=es "@heyAparicio")
-E-mail: ama@radarez.com
-Web: [www.Radarez.com](http://www.radarez.com "Desarrollo de software a medida")
-</pre>
+
+#### Adrian Miranda A.
+#### Twiitter: [@heyAparicio](https://twitter.com/heyaparicio?lang=es "@heyAparicio")
+#### E-mail: ama@radarez.com
+#### Web: [www.Radarez.com](http://www.radarez.com "Desarrollo de software a medida")
