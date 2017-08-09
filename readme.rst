@@ -1,17 +1,44 @@
-API REST BÁSICA CON Vue.JS 2, CodeIgniter,codeigniter-restserver y MySQL
+API REST BÁSICA CON Vue.JS 2, CodeIgniter, codeigniter-restserver y MySQL
 ===========================================================================
 
-PROBADA CON
+Tecnologías utilizadas
 ____________________________________________________________________________
 * Apache Server
 * PHP 7.1.1
 * MySQL 5.x.x
 * Vue.js 2.x.x y (vue-resource) para conexión a datos
+* CodeIgniter 3.x.x
+
+Front-end con Vue.js 2
+______________________________________________________________________________
+Index.html
+
+Configuración Básica de CodeIgniter
+______________________________________________________________________________
+Config.php
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    $config['index_page'] = '';
+
+autoload.php
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    $autoload['libraries'] = array('form_validation','database', 'session');
+    $autoload['helper'] = array('url', 'html', 'form' ,'language', 'date','security');
+    $autoload['model'] = array('Todo_model');
+
+.htaccess de en raíz
+*******************************************************************************
+ <IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ /Todo/index.php?/$1 [L]
+</IfModule>
 
 MySQL TABLA
 ______________________________________________________________________________
 .. code-block:: sql
-   :linenos:
     CREATE TABLE `todo` (
       `id` int(11) NOT NULL AUTO_INCREMENT,
       `nombre_usuario` varchar(45) DEFAULT NULL,
