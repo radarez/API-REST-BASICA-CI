@@ -16,7 +16,7 @@ $config['index_page'] = '';
 ```
 
 </h3>autoload.php</h3>
-```php
+```*.php
 $autoload['libraries'] = array('form_validation','database', 'session');
 $autoload['helper'] = array('url', 'html', 'form' ,'language', 'date','security');
 $autoload['model'] = array('Todo_model');
@@ -36,7 +36,7 @@ $autoload['model'] = array('Todo_model');
     </code>
 </pre>
 
-<h2>MySQL TABLA</h2>
+<h3>MySQL TABLA</h3>
 ```sql
     CREATE TABLE `todo` (
       `id` int(11) NOT NULL AUTO_INCREMENT,
