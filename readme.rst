@@ -1,4 +1,4 @@
-API REST BÁSICA CON **Vue.JS 2**, **CODEIGNITER**, **CODEIGNITER-RESTSERVER** y ** MySQL**
+API REST BÁSICA CON Vue.JS 2, CodeIgniter,codeigniter-restserver y MySQL
 ===========================================================================
 
 PROBADA CON
