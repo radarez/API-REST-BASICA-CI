@@ -4,7 +4,12 @@
 * PHP 7.1.1
 * MySQL 5.x.x
 * Vue.js 2.x.x y (vue-resource) para conexión a datos
+* Vue-resource 1.3.4
 * CodeIgniter 3.x.x
+* jQuery 3.x.x
+* Bootstrap 3.x.x
+* Sweetalert2 6.x.x
+
 
 ## Front-end con Vue.js 2
 Index.html
@@ -40,7 +45,7 @@ $autoload['model'] = array('Todo_model');
     </IfModule>
 
 
-### MySQL TABLA
+## MySQL TABLA
 ```sql
     CREATE TABLE `todo` (
       `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -51,3 +56,7 @@ $autoload['model'] = array('Todo_model');
       PRIMARY KEY (`id`)
     ) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
 ```
+Autor: Adrian Miranda A.
+Twiitter: [@heyAparicio](https://twitter.com/heyaparicio?lang=es "@heyAparicio")
+E-mail: ama@radarez.com
+Web: [www.Radarez.com](http://www.radarez.com "Desarrollo de software a medida")
