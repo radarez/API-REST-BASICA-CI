@@ -21,20 +21,21 @@ Config.php
 
 autoload.php
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    $autoload['libraries'] = array('form_validation','database', 'session');
-    $autoload['helper'] = array('url', 'html', 'form' ,'language', 'date','security');
-    $autoload['model'] = array('Todo_model');
+    .. code-block:: php
+        $autoload['libraries'] = array('form_validation','database', 'session');
+        $autoload['helper'] = array('url', 'html', 'form' ,'language', 'date','security');
+        $autoload['model'] = array('Todo_model');
 
 .htaccess de en raíz
 *******************************************************************************
- <IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteBase /
+    <IfModule mod_rewrite.c>
+        RewriteEngine On
+        RewriteBase /
 
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^(.*)$ /Todo/index.php?/$1 [L]
-</IfModule>
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteCond %{REQUEST_FILENAME} !-d
+        RewriteRule ^(.*)$ /Todo/index.php?/$1 [L]
+    </IfModule>
 
 MySQL TABLA
 ______________________________________________________________________________
