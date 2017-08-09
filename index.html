@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="Adrián Miranda A. @heyAparicio www.radarez.com" content="Simple CRUD con Vue.Js">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- Sweet Alert -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.6/sweetalert2.min.css">
+</head>
+<body>
+
+    <div id="todo" class="container">
+        <section v-if="showListRows == true">
+            <table>
+                <caption><a href="#" title="" @click="showAddForm()">Agregar</a></caption>
+                <thead>
+                    <tr>
+                        <th>Acciones</th>
+                        <th>Nombre</th>
+                        <th>Tarea</th>
+                        <th>Descripción</th>
+                        <th>Fecha creación</th>
+                    </tr>
+                </thead>
+                <tbody v-for="row in tareas.response">
+                    <td>
+                        <a href="#" title="" @click="showUpdateForm(row.id, row.nombre_usuario, row.nombre_tarea, row.descripcion_tarea)">Actualizar</a>
+                        <a href="#" title="" @click="rowDelete(row.id, row.nombre_tarea)">Eliminar</a>
+                    </td><td>
+                        {{row.nombre_usuario}}
+                    </td>
+                    <td>
+                        {{row.nombre_tarea}}
+                    </td>
+                    <td>
+                        {{row.descripcion_tarea}}
+                    </td>
+                    <td>
+                        {{row.creada_en}}
+                    </td>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Agregar -->
+        <section v-show="formAdd == true">
+            <h2>Agregar</h2>
+            <form role="form"  @submit.prevent="add()">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Nombre usuario</label>
+                    <input type="text" class="form-control" v-model="todo.nombre_usuario" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Nombre tarea</label>
+                    <input type="test" class="form-control" v-model="todo.nombre_tarea" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Descripción</label>
+                    <textarea name="descripcion" class="form-control" rows="3" v-model="todo.descripcion_tarea" ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Guardar</button>
+                <button type="button" class="btn btn-default" v-on:click="hideAddForm">Cancelar</button>
+            </form>
+        </section>
+
+        <!-- Actualizar -->
+        <section v-show="formUpdate === true">
+            <h2>Actualizar</h2>
+            <form role="form"  @submit.prevent="update()">
+                <div class="form-group">
+                    <label for="nombre">Nombre usuario</label>
+                    <input type="text" class="form-control" v-model="todo.nombre_usuario">
+                </div>
+                <div class="form-group">
+                    <label for="nombre-tarea">Nombre tarea</label>
+                    <input type="text" class="form-control"  v-model="todo.nombre_tarea">
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">Descripción</label>
+                    <textarea name="descripcion" class="form-control" rows="3" v-model="todo.descripcion_tarea"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Guardar</button>
+                <button type="button" class="btn btn-default" v-on:click="hideUpdateForm">Cancelar</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"  crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <!-- Librerias Importantes! -->
+    <!-- Vue.JS -->
+    <script src="https://unpkg.com/vue"></script>
+    <!-- Librería para conexión a BD (vue-resource)-->
+    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.3.4"></script>
+    <!-- Sweet Alert -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.6/sweetalert2.common.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.6/sweetalert2.min.js"></script>
+    <!-- Logica del CRUD -->
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
