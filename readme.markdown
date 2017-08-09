@@ -1,3 +1,4 @@
+![alt CRUD con Vue.js](http://www.radarez.com.mx/blog/vue-js/images/software-a-medida-todo.jpg "CRUD Vue.js")
 # API REST BÁSICA CON Vue.JS 2, CodeIgniter, codeigniter-restserver y MySQL
 La API es una pequeña lista de tareas y se cumplen las cuatro funciones de un CRUD
 Altas, Bajas, Consultas, Modificaciones
