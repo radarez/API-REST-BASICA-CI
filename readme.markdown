@@ -23,7 +23,7 @@ $autoload['model'] = array('Todo_model');
 ```
 
 ### .htaccess de en raíz
-<pre><code class="xml">
+
     <IfModule mod_rewrite.c>
         RewriteEngine On
         RewriteBase /
@@ -31,7 +31,7 @@ $autoload['model'] = array('Todo_model');
         RewriteCond %{REQUEST_FILENAME} !-d
         RewriteRule ^(.*)$ /Todo/index.php?/$1 [L]
     </IfModule>
-</pre></code>
+
 
 ### MySQL TABLA
 ```sql
