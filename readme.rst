@@ -11,6 +11,7 @@ ____________________________________________________________________________
 MySQL TABLA
 ______________________________________________________________________________
 .. code-block:: sql
+   :linenos:
     CREATE TABLE `todo` (
       `id` int(11) NOT NULL AUTO_INCREMENT,
       `nombre_usuario` varchar(45) DEFAULT NULL,
