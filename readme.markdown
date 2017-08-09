@@ -16,7 +16,8 @@ $config['index_page'] = '';
 ```
 
 </h3>autoload.php</h3>
-```*.php
+```php
+<?php
 $autoload['libraries'] = array('form_validation','database', 'session');
 $autoload['helper'] = array('url', 'html', 'form' ,'language', 'date','security');
 $autoload['model'] = array('Todo_model');
