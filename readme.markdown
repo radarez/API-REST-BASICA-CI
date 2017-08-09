@@ -24,13 +24,13 @@ $autoload['model'] = array('Todo_model');
 
 ### .htaccess de en raíz
 <pre><code>
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteBase /
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^(.*)$ /Todo/index.php?/$1 [L]
-</IfModule>
+    <IfModule mod_rewrite.c>
+        RewriteEngine On
+        RewriteBase /
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteCond %{REQUEST_FILENAME} !-d
+        RewriteRule ^(.*)$ /Todo/index.php?/$1 [L]
+    </IfModule>
 </pre></code>
 
 ### MySQL TABLA
