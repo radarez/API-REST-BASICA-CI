@@ -1,4 +1,9 @@
 # API REST BÁSICA CON Vue.JS 2, CodeIgniter, codeigniter-restserver y MySQL
+La API es una pequeña lista de tareas y se cumplen las cuatro funciones de un CRUD
+Altas, Bajas, Consultas, Modificciones
+
+Nota: Se pueden hacer muchas modificaciones para mejorar el código, pero esa sera tarea de la persona que decidan utilizarla :).
+
 ## Tecnologías utilizadas
 * Apache Server
 * PHP 7.1.1
@@ -13,6 +18,9 @@
 
 ## Front-end con Vue.js 2
 Index.html
+
+## Configuración básica Vue.js 2.x.x
+
 
 ## Configuración Básica de CodeIgniter
 ### config.php
