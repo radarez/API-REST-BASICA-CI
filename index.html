@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.6/sweetalert2.min.css">
 </head>
 <body>
-
     <div id="todo" class="container">
+        <h1>Lista de tareas</h1>
         <section v-if="showListRows == true">
-            <table>
+            <table class="table table-striped table-bordered">
                 <caption><a href="#" title="" @click="showAddForm()">Agregar</a></caption>
                 <thead>
                     <tr>
