@@ -76,6 +76,8 @@ var todo = new Vue({
           swal('Cacelado', 'No se elimino el registro', 'error');
         }
       });
+      console.log("sss");
+      this.todasLasTareas();
     },
     showAddForm: function(){
       this.showListRows = false;

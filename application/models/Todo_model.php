@@ -14,7 +14,8 @@ class Todo_model extends CI_Model
         ->get();
         // echo $this->db->last_query();
         $num_rows = sizeof($query->result());
-        if($num_rows > 1){
+
+        if($num_rows > 0){
             return $query->result();
         }else{
             return $query->row();
