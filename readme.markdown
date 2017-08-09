@@ -23,19 +23,7 @@ $autoload['helper'] = array('url', 'html', 'form' ,'language', 'date','security'
 $autoload['model'] = array('Todo_model');
 ```
 
-<h3>.htaccess de en raíz</h3>
-<pre>
-    <code>
-        <IfModule mod_rewrite.c>
-            RewriteEngine On
-            RewriteBase /
 
-            RewriteCond %{REQUEST_FILENAME} !-f
-            RewriteCond %{REQUEST_FILENAME} !-d
-            RewriteRule ^(.*)$ /Todo/index.php?/$1 [L]
-        </IfModule>
-    </code>
-</pre>
 
 <h3>MySQL TABLA</h3>
 ```sql
