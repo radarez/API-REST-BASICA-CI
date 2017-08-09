@@ -14,6 +14,13 @@ Index.html
 ```php
 $config['index_page'] = '';
 ```
+### database.php
+```php
+'hostname' => '127.0.0.1',
+'username' => 'todo',
+'password' => '123qaz',
+'database' => 'todo',
+```
 
 ### autoload.php
 ```php
