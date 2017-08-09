@@ -19,11 +19,9 @@ $config['index_page'] = '';
 
 ### autoload.php
 ```php
-<?php
 $autoload['libraries'] = array('form_validation','database', 'session');
 $autoload['helper'] = array('url', 'html', 'form' ,'language', 'date','security');
 $autoload['model'] = array('Todo_model');
-?>
 ```
 
 ### .htaccess de en raíz
