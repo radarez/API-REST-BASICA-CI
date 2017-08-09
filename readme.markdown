@@ -51,17 +51,6 @@ application/config/routes.php
 ### Ruta para obtener los datos de la tabla; si obtienes respuesta tu API funciona :), recuerda poner datos en la tabla.
 http://localhost/Todo/todo
 
-### .htaccess de en raíz
-
-    <IfModule mod_rewrite.c>
-        RewriteEngine On
-        RewriteBase /
-        RewriteCond %{REQUEST_FILENAME} !-f
-        RewriteCond %{REQUEST_FILENAME} !-d
-        RewriteRule ^(.*)$ /Todo/index.php?/$1 [L]
-    </IfModule>
-
-
 ## MySQL TABLA
 ```sql
     CREATE TABLE `todo` (
@@ -73,6 +62,16 @@ http://localhost/Todo/todo
       PRIMARY KEY (`id`)
     ) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
 ```
+
+### .htaccess de en raíz
+
+    <IfModule mod_rewrite.c>
+        RewriteEngine On
+        RewriteBase /
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteCond %{REQUEST_FILENAME} !-d
+        RewriteRule ^(.*)$ /Todo/index.php?/$1 [L]
+    </IfModule>
 
 ##### Adrian Miranda A.
 ##### Twiitter: [@heyAparicio](https://twitter.com/heyaparicio?lang=es "@heyAparicio")
