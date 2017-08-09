@@ -39,7 +39,7 @@ autoload.php
 
 MySQL TABLA
 ______________________________________________________________________________
-.. code-block:: sql
+```sql
     CREATE TABLE `todo` (
       `id` int(11) NOT NULL AUTO_INCREMENT,
       `nombre_usuario` varchar(45) DEFAULT NULL,
@@ -48,3 +48,4 @@ ______________________________________________________________________________
       `creada_en` datetime DEFAULT CURRENT_TIMESTAMP,
       PRIMARY KEY (`id`)
     ) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+```
