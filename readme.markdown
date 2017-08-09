@@ -23,7 +23,7 @@ $autoload['model'] = array('Todo_model');
 ```
 
 ### .htaccess de en raíz
-<pre><code>
+<pre><code class="xml">
     <IfModule mod_rewrite.c>
         RewriteEngine On
         RewriteBase /
