@@ -12,7 +12,9 @@ Index.html
 <h2>Configuración Básica de CodeIgniter</h2>
 <h3>Config.php</h3>
 ```php
+<?php
 $config['index_page'] = '';
+?>
 ```
 
 </h3>autoload.php</h3>
@@ -21,9 +23,22 @@ $config['index_page'] = '';
 $autoload['libraries'] = array('form_validation','database', 'session');
 $autoload['helper'] = array('url', 'html', 'form' ,'language', 'date','security');
 $autoload['model'] = array('Todo_model');
+?>
 ```
 
+<h3>.htaccess de en raíz</h3>
+<pre>
+    <code>
+        <IfModule mod_rewrite.c>
+            RewriteEngine On
+            RewriteBase /
 
+            RewriteCond %{REQUEST_FILENAME} !-f
+            RewriteCond %{REQUEST_FILENAME} !-d
+            RewriteRule ^(.*)$ /Todo/index.php?/$1 [L]
+        </IfModule>
+    </code>
+</pre>
 
 <h3>MySQL TABLA</h3>
 ```sql
